@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 import CommentBox from './CommentBox';
+import Home from './Home';
+import Nav from './Nav';
 
 
 
@@ -8,7 +11,13 @@ class App extends Component {
   render(){
     return(
       <div className="ui container comment">
-        <CommentBox />
+        <Router>
+        <Nav />
+        <Switch>
+        <Route exact path='/' component={Home} />
+        <Route path='/commentbox' component={CommentBox} />
+        </Switch>
+        </Router>
       </div>
 
 
