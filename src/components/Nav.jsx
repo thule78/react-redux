@@ -6,6 +6,7 @@ function Nav (){
     <div className="ui secondary  menu">
       <Link className="item" to="/">Home</Link>
       <Link className="item" to="/commentbox">Comment Box</Link>
+      <Link className="item" to="/seasondisplay">Season Display</Link>
     </div>
     )
 }

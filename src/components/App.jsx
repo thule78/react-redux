@@ -4,6 +4,8 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import CommentBox from './CommentBox';
 import Home from './Home';
 import Nav from './Nav';
+import SeasonDisplay from './SeasonDisplay';
+
 
 
 
@@ -16,6 +18,7 @@ class App extends Component {
         <Switch>
         <Route exact path='/' component={Home} />
         <Route path='/commentbox' component={CommentBox} />
+        <Route path='/seasondisplay' component={SeasonDisplay} />
         </Switch>
         </Router>
       </div>
