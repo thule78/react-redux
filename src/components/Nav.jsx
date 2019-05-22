@@ -8,6 +8,7 @@ function Nav (){
       <Link className="item" to="/commentbox">Comment Box</Link>
       <Link className="item" to="/seasondisplay">Season Display</Link>
       <Link className="item" to="/time">Time</Link>
+      <Link className="search" to="/search">Search</Link>
     </div>
     )
 }

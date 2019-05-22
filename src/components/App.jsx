@@ -6,6 +6,7 @@ import Home from './Home';
 import Nav from './Nav';
 import SeasonDisplay from './SeasonDisplay';
 import Time from './Time';
+import Search from './Search';
 
 
 
@@ -21,6 +22,7 @@ class App extends Component {
         <Route path='/commentbox' component={CommentBox} />
         <Route path='/seasondisplay' component={SeasonDisplay} />
         <Route path='/time' component={Time} />
+        <Route path="/search" component={Search} />
         </Switch>
         </Router>
       </div>
