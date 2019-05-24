@@ -1,13 +1,14 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-class SearchList extends Component{
-  render(){
-    return(
-      <div>
-        <p>search list result</p>
-      </div>
-      )
-  }
-}
+const SearchList =  props =>{
+  console.log(props.images);
+  const photo = props.images.map(image => {return <img src={image.urls.small} />}
+  );
+  return (
+    <div>
+      {photo}
+    </div>
+    )
+};
 
 export default SearchList

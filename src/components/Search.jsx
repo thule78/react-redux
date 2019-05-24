@@ -26,12 +26,13 @@ class Search extends Component{
   }
 
   render(){
+
     return(
       <div>
         <h3>search from API</h3>
         <SearchBar onThisSubmitChange={this.onSearchSubmit}/>
-        <SearchList />
-        Found:{this.state.images.length} images
+        <SearchList images={this.state.images} />
+
       </div>
       )
   }
