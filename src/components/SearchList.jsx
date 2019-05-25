@@ -1,11 +1,14 @@
 import React from 'react';
 
+import SearchImg from './SearchImg';
+
+import './searchstyle.css';
+
 const SearchList =  props =>{
-  console.log(props.images);
-  const photo = props.images.map(image => {return <img src={image.urls.small} />}
+  const photo = props.images.map(image => {return <SearchImg key={image.id} image={image} />}
   );
   return (
-    <div>
+    <div className="photo_list">
       {photo}
     </div>
     )
